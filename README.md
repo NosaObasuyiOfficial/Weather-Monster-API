@@ -1,3 +1,8 @@
-# Weather-Monster
+App Name : Weather Monster
 
-App Configuration 
+# Setting up the project
+
+
+# Running the tests
+
+# Running the app

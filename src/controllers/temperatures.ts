@@ -45,7 +45,7 @@ export const create_temperatures = async (req: Request, res: Response) => {
             const City_Id = data_check.city_id;
             const max_temp = data_check.max;
             const min_temp = data_check.min;
-            const city_timestap = data_check.timestamp;
+            const city_timestap = +data_check.timestamp;
 
             const data = {
               id: Id,

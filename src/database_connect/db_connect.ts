@@ -6,9 +6,9 @@ dotenv.config()
 const { DEV_DB_NAME, DEV_DB_USERNAME, DEV_DB_PASSWORD, DEV_DB_HOST } = process.env
 
 export const db = new Sequelize(
-  DEV_DB_NAME!, //name of database
-  DEV_DB_USERNAME!, //name of username
-  DEV_DB_PASSWORD!, //db password
+  DEV_DB_NAME!, 
+  DEV_DB_USERNAME!, 
+  DEV_DB_PASSWORD!, 
 
   {
     host: DEV_DB_HOST,

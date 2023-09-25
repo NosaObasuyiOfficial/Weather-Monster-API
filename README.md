@@ -6,16 +6,16 @@
 3. RUN yarn build - to build (compile) the app in watch mode
 4. Add .env file to this project root folder - 'Weather-Monster-API'
 - Copy and paste the data in between the START and END tag below in your .env file
----START----
+# ---START----
 #PORT
-PORT = 3000
+- PORT = 3000
 
 #database config
-- DEV_DB_NAME = <relace with your database name e.g weather_monster>
-- DEV_DB_HOST = <replace with your database localhost e.g localhost>
-- DEV_DB_USERNAME = <replace with your database username e.g postgres>
-- DEV_DB_PASSWORD = <replace with your database password e.g 'MyPassword'> 
----END------
+- DEV_DB_NAME = - <relace with your database name e.g weather_monster>
+- DEV_DB_HOST = - <replace with your database localhost e.g localhost>
+- DEV_DB_USERNAME = -  <replace with your database username e.g postgres>
+- DEV_DB_PASSWORD = - <replace with your database password e.g 'MyPassword'> 
+# ---END------
 IMPORTANT NOTE!!!  
 Please Check the 'database_connect' folder to adjust any information inorder to connect to your local database.
 

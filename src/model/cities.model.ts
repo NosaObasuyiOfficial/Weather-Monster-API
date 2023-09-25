@@ -31,7 +31,7 @@ Cities.init({
     },
 }, {
     sequelize:db,
-    tableName: "cities",
+    tableName: "Cities",
     modelName: "Cities"
 })
 

@@ -128,7 +128,7 @@ export const delete_a_city = async (req: Request, res: Response) => {
     });
 
     if (find_city) {
-      const city_name = find_city.city;
+      const city_name = find_city.name;
       const city_id = find_city.id;
       const city_latitude = find_city.latitude;
       const city_longitude = find_city.longitude;

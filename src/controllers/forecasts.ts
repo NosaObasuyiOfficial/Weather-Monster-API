@@ -32,7 +32,7 @@ export const forecasts = async (req: Request, res: Response) => {
       } else {
         city_temp_data.map((temperatures: any) => {
           const current_time = new Date().getTime();
-          if ((current_time - temperatures.timestamp) / 3600000 <= 24) {
+          if ((+current_time - +temperatures.timestamp) / 3600000 <= 24) {
             max_temp.push(temperatures.max);
             min_temp.push(temperatures.min);
           }

@@ -24,7 +24,7 @@ Temperatures.init({
         allowNull: true
     },
    city_id:{
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
         allowNull:false,
     },
     max:{

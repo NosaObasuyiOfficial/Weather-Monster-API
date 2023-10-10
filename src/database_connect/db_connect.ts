@@ -21,6 +21,12 @@ export const db = new Sequelize(
         rejectUnauthorized: true,
       },
     },
+    pool: {
+      max: 10, // maximum number of connections in the pool
+      min: 0,  // minimum number of connections in the pool
+      acquire: 30000, // maximum time, in milliseconds, that a connection can be idle before being released
+      idle: 10000 // maximum time, in milliseconds, that pool will try to get connection before throwing error
+    }
   },
 );
 

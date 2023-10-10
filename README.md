@@ -10,11 +10,7 @@
 #PORT
 - PORT = 3000
 
-#database config
-- DEV_DB_NAME = - <relace with your database name e.g weather_monster>
-- DEV_DB_HOST = - <replace with your database localhost e.g localhost>
-- DEV_DB_USERNAME = -  <replace with your database username e.g postgres>
-- DEV_DB_PASSWORD = - <replace with your database password e.g 'MyPassword'> 
+
 # ---END------
 IMPORTANT NOTE!!!  
 Please Check the 'database_connect' folder to adjust any information inorder to connect to your local database.

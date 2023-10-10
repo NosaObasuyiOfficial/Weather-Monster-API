@@ -8,6 +8,7 @@
   "scripts": {
     "build": "tsc -w",
     "start": "nodemon dist/app.js",
+    "run": "node dist/app.js",
     "test": "jest --detectOpenHandles",
     "compile": "tsc"
   },

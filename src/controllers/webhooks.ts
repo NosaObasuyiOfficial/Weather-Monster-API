@@ -40,8 +40,8 @@ export const create_webhook = async (req: Request, res: Response) => {
           city_id,
           callback_url,
         });
+        
         if (creating_webhook) {
-
           const created_webhook:any = await Webhooks.findOne({
             where: {
               [Op.and]: [
@@ -50,6 +50,7 @@ export const create_webhook = async (req: Request, res: Response) => {
               ]
             }
           })
+
           const webhook_id = created_webhook.id
           const webhook_callbackUrl = created_webhook.callback_url
           const webhook_city_id = created_webhook.city_id

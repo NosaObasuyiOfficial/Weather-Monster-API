@@ -1,7 +1,11 @@
 # Weather Monster
 
 # Setting up the project
-1. Clone this repo - git@github.com:NosaObasuyiOfficial/Weather-Monster-API.git
+1. **Clone this repo**
+  To clone this repository, copy the ssh key:
+
+   ```sh
+   git@github.com:NosaObasuyiOfficial/Weather-Monster-API.git
 
 2. **Install dependencies**
 To install dependencies, use the following command in your terminal or command prompt:
@@ -22,7 +26,6 @@ Url - https://weather-monster-c1xp.onrender.com
 # Running the app
 Please open the link below in your broswer to see the detailed postman documentation on how to run all endpoint operations in this app.
 https://documenter.getpostman.com/view/27252839/2s9YJW663Q
-
 
 # Running the Tests
 To run the tests for this project, follow these steps:

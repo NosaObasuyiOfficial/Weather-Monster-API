@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { create_city, update_city } from "../utilities/input_validation";
-import Cities from "../model/cities.model";
-import Tempeartures from "../model/temperatures.model";
+import Cities from "../test_model/cities.model";
+import Tempeartures from "../test_model/temperatures.model";
 
 //-------------------------------CREATE A CITY------------------------------------//
 export const create_a_city = async (req: Request, res: Response) => {

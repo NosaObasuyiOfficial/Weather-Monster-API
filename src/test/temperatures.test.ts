@@ -1,10 +1,8 @@
 import request from "supertest";
 import express from "express";
-import temperaturesRoute from "../routes/temperatures.route";
-import Cities from "../model/cities.model";
-import { db } from "../database_connect/db_connect";
-
-import Temperatures from "../model/temperatures.model";
+import temperaturesRoute from "../test_routes/temperatures.route";
+import Cities from "../test_model/cities.model";
+import { test_db } from "../database_connect/test_dbconnect";
 
 const app = express();
 
@@ -21,7 +19,7 @@ async function seedDataBase() {
 }
 
 async function clearDataBase() {
-  return await db.sync({ force: true });
+  return await test_db.sync({ force: true });
 }
 
 describe("POST/ Create a Temperature", () => {

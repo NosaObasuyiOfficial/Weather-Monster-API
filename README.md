@@ -2,8 +2,18 @@
 
 # Setting up the project
 1. Clone this repo - git@github.com:NosaObasuyiOfficial/Weather-Monster-API.git
-2. RUN yarn - to install dependencies
-3. RUN yarn build - to build (compile) the typescript code
+
+2. **Install dependencies**
+To install dependencies, use the following command in your terminal or command prompt:
+
+   ```sh
+   yarn
+
+3. **Build Application**
+To build or compile this application, use the following command in your terminal or command prompt:
+
+   ```sh
+   yarn build
 
 **Notice:**
 This app has been deployed on render. 
@@ -17,11 +27,12 @@ https://documenter.getpostman.com/view/27252839/2s9YJW663Q
 # Running the Tests
 To run the tests for this project, follow these steps:
 
-1. **Add an Environment File:**
+1. **Add an Environment File (env):**
    Create a file named `.env` in the root folder of your project.
 
-2. **Copy and Paste the Following Information:**
+2. **Copy and Paste the Following Information in the env file:**
    ```plaintext
+   PORT = 3000
    DEV_TEST_DB_NAME = 'insert your postgres db_name'
    DEV_TEST_DB_HOST = 'insert host e.g localhost'
    DEV_TEST_DB_USERNAME = 'insert your postgres db_username'
@@ -39,7 +50,7 @@ To start the application, use the following command in your terminal or command 
    yarn start
 
 4. **Run Tests:**
-   To execute all tests for this application, use the following command in your terminal or command prompt:
+To execute all tests for this application, use the following command in your terminal or command prompt:
 
    ```sh
    yarn test

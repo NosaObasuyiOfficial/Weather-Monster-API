@@ -1,9 +1,9 @@
 import request from "supertest";
 import express from "express";
-import forecastsRoute from "../routes/forecasts.route";
-import Cities from "../model/cities.model";
-import Temperatures from "../model/temperatures.model";
-import { db } from "../database_connect/db_connect";
+import forecastsRoute from "../test_routes/forecasts.route";
+import Cities from "../test_model/cities.model";
+import Temperatures from "../test_model/temperatures.model";
+import { test_db } from "../database_connect/test_dbconnect";
 
 const app = express();
 
@@ -30,7 +30,7 @@ async function seedDataBase2() {
 }
 
 async function clearDataBase() {
-  return await db.sync({ force: true });
+  return await test_db.sync({ force: true });
 }
 
 describe("GET/ Forecasts for a City", () => {

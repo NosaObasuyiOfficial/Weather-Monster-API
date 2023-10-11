@@ -1,9 +1,9 @@
 import request from "supertest";
 import express from "express";
-import webhooksRoute from "../routes/webhooks.route";
-import { db } from "../database_connect/db_connect";
-import Cities from "../model/cities.model";
-import Webhooks from "../model/webhooks.model";
+import webhooksRoute from "../test_routes/webhooks.route";
+import { test_db } from "../database_connect/test_dbconnect";
+import Cities from "../test_model/cities.model";
+import Webhooks from "../test_model/webhooks.model";
 
 const app = express();
 
@@ -20,7 +20,7 @@ async function seedDataBase() {
   });
 }
 async function clearDataBase() {
-  return await db.sync({ force: true });
+  return await test_db.sync({ force: true });
 }
 
 async function seedDataBase2() {

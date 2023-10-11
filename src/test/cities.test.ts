@@ -1,8 +1,8 @@
 import request from "supertest";
 import express from "express";
-import citiesRoute from "../routes/cities.route";
-import Cities from "../model/cities.model";
-import { db } from "../database_connect/db_connect";
+import citiesRoute from "../test_routes/cities.route";
+import Cities from "../test_model/cities.model";
+import { test_db } from "../database_connect/test_dbconnect";
 const app = express();
 
 app.use(express.json());
@@ -18,7 +18,7 @@ async function seedDataBase() {
   });
 }
 async function clearDataBase() {
-  return await db.sync({ force: true });
+  return await test_db.sync({ force: true });
 }
 
 describe("POST/ Creating a city", () => {

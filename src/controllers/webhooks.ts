@@ -43,16 +43,21 @@ export const create_webhook = async (req: Request, res: Response) => {
         if (creating_webhook) {
 
           const created_webhook:any = await Webhooks.findOne({
-            where: {callback_url}
+            where: {
+              [Op.and]: [
+                { city_id},
+                { callback_url }
+              ]
+            }
           })
           const webhook_id = created_webhook.id
-          const city_webhook_id = created_webhook.city_id
           const webhook_callbackUrl = created_webhook.callback_url
+          const webhook_city_id = created_webhook.city_id
 
           const data = {
             id: webhook_id,
-            city_id: city_webhook_id,
-            callback_url: webhook_callbackUrl
+            city_id: webhook_city_id,
+            callback_url :webhook_callbackUrl
           }
           return res.status(200).json({
             message: `Webhook; ${callback_url} created SUCCESFULLY`,

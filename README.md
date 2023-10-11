@@ -19,13 +19,16 @@ To build or compile this application, use the following command in your terminal
    ```sh
    yarn build
 
-**Notice:**
-This app has been deployed on render. 
-Url - https://weather-monster-c1xp.onrender.com
+ **Notice:**
+ This app has been deployed on render. 
+ Url - https://weather-monster-c1xp.onrender.com
 
 # Running the app
-Please open the link below in your broswer to see the detailed postman documentation on how to run all endpoint operations in this app.
-https://documenter.getpostman.com/view/27252839/2s9YJW663Q
+Please copy and paste the link below in your broswer to see the detailed postman documentation on how to run all endpoint operations in this app.
+
+   ```sh
+   https://documenter.getpostman.com/view/27252839/2s9YJW663Q
+
 
 # Running the Tests
 To run the tests for this project, follow these steps:

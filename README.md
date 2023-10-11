@@ -14,7 +14,7 @@ To install dependencies, use the following command in your terminal or command p
    yarn
 
 3. **Build Application**
-To build or compile this application, use the following command in your terminal or command prompt:
+  To build or compile this application, use the following command in your terminal or command prompt:
 
    ```sh
    yarn build
@@ -24,9 +24,7 @@ To build or compile this application, use the following command in your terminal
  Url - https://weather-monster-c1xp.onrender.com
 
 # Running the app
-Please copy and paste the link below in your broswer to see the detailed postman documentation on how to run all endpoint operations in this app.
-
-   ```sh
+  Please copy and paste the link below in your broswer to see the detailed postman documentation on how to run all endpoint operations in this app.
    https://documenter.getpostman.com/view/27252839/2s9YJW663Q
 
 
